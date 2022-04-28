@@ -10,25 +10,29 @@
 </head>
 
 <body>
+    <!--title of the website-->
  <header class="hero">
-   <h1 class="app-title">Weather Dashboard</h1>
-   <p>Going somewhere? Check the weather!</p>
+   <h1 class="app-title text-center">Weather Dashboard</h1>
+   <p class="text-center">Going somewhere? Check the weather!</p>
  </header>
 
+ <!--search section-->
  <main class="flex-row justify-space-between">
     <div class="col-12 col-md-4">
       <div class="card">
-      <h3 class="card-header text-uppercase">Search For City</h3>
+      <h3 class="card-header text-uppercase text-center">Search For City</h3>
       <form id="user-form" class="card-body">
-      <label class="form-label" for="city">City Name</label>
+      <label class="form-label text-center flex-row" for="city">City Name</label>
       <input name="city" id="city" type="text" autofocus="true" class="form-input"/>
       <button type="submit" class="btn">Find City</button>
       </form>
     </div>
-
+ <!--displayed results section-->
     <div class="col-12 col-md-8">
-      <h2 class="subtitle">Weather Forcast for the Week</h2>
+     <div class="card">
+      <h2 class="subtitle text-center">Weather Forcast for the Week:</h2>
       <div id="repos-container" class="list-group"></div>
+     </div>
     </div>
 
  </main>
