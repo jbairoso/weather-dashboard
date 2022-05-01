@@ -16,26 +16,31 @@
    <p class="text-center">Going somewhere? Check the weather!</p>
  </header>
 
- <!--search section-->
+ 
  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-      <div class="card">
+    <!--search section-->
+    <section class="search col-4 algin-center">
       <h3 class="card-header text-uppercase text-center">Search For City</h3>
-      <form id="user-form" class="card-body">
-      <label class="form-label text-center flex-row" for="city">City Name</label>
-      <input name="city" id="city" type="text" autofocus="true" class="form-input"/>
-      <button type="submit" class="btn">Find City</button>
-      </form>
-    </div>
- <!--displayed results section-->
-    <div class="col-12 col-md-8">
-     <div class="card">
-      <h2 class="subtitle text-center">Weather Forcast for the Week:</h2>
-      <div id="repos-container" class="list-group"></div>
-     </div>
-    </div>
+      <input name="city" id="search-city" type="text" autofocus="true" class="w-100" placeholder="Enter City Name"/>
+      <button type="button" class="btn" id="btn">Find City</button>
+      <div class="mt-4 w-100" id="search-history"></div>
+    </section>
+
+    <!--displayed results section-->
+    <section class="weather-information col-8">
+      <!--today's weather-->
+      <div class="todays-info w-100 py-4 px-4 mb-4">
+        <h3 class="city-name text-center">City Name (current day)</h3>
+         <div class="temp">Temperature:</div>
+         <div class="humidity">Humidity:</div>
+         <div class="wind">Wind:</div>
+         <div class="uv">UV Index:</div>
+      </div>
+    </section>
+
 
  </main>
+
 <script src="./assets/js/script.js"></script>
 </body>
-</html> 
+</html>  
